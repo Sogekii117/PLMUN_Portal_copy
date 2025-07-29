@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PLMun Student Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>PLMun Student Portal</h2>
+      <p>Fill out the Form to Login</p>
+    </div>
+
+    <form>
+      <label for="studentNumber">Student Number</label>
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" id="studentNumber" name="studentNumber" required>
+      </div>
+
+      <label for="pinNumber">Pin Number</label>
+      <div class="input-group">
+      <i class="fa-solid fa-key"></i>
+        <input type="text" id="pinNumber" name="pinNumber" required>
+      </div>
+
+      <label for="captcha">Captcha Code</label>
+      <div class="captcha-img">
+        <img src="captcha.jpg" alt="Captcha Image" style="height: 100%;">
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-calculator"></i>
+        <input type="text" id="captcha" name="captcha" required>
+      </div>
+
+      <p class="note">*Enter the captcha code above</p>
+
+      <button type="submit">Sign in</button>
+    </form>
+
+    <div class="support">
+      <p>If you forgot your PIN or need an assistance to activate your account, please email us at 
+      <a href="mailto:support@plmun.edu.ph">support@plmun.edu.ph</a> using your official IE account. We will only entertain messages coming from PLMun official IE.</p>
+    </div>
+  </div>
+</body>
+</html>
